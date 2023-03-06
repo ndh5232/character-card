@@ -1,5 +1,9 @@
 import { LitElement, html, css } from 'lit';
 
+import { LitElement, html } from 'lit';
+import '@lrnwebcomponents/meme-maker';
+
+
 const woody = new URL('../assets/woody.jpg', import.meta.url).href;
 
 export class CharacterCard extends LitElement {
