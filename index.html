@@ -33,7 +33,7 @@
   <script>
     const details = document.querySelector('summary');
 
-// toggle the 1ST instance of the stats
+// toggle the description for the card
 document.querySelector('button[desc-toggle-btn]').addEventListener('click', (e) => {
   const details = document.querySelector('character-card').shadowRoot.querySelector('details')
   if (details.getAttribute('open')) {
@@ -44,13 +44,13 @@ document.querySelector('button[desc-toggle-btn]').addEventListener('click', (e) 
   }
 });
 
-// duplicate the 1st item
+// duplicates the card
 document.querySelector('.duplicate').addEventListener('click', function(e) {
   const itemToClone = document.querySelector('character-card').cloneNode();
   document.querySelector('#app').appendChild(itemToClone);
 });
 
-// modify name of 1st item
+// modifies the name of the card
 document.querySelector('.modifytitle').addEventListener('click', function(e) {
   let name = prompt("Change Name...");
   if (name) {
@@ -58,7 +58,7 @@ document.querySelector('.modifytitle').addEventListener('click', function(e) {
   }
 });
 
-// delete the last item
+// deletes the last card you duplicated while not letting you delete the last
 document.querySelector('#deletelastcard').addEventListener('click', function(e) {
   let wantsTo = confirm("Are you sure?");
   if (wantsTo) {
