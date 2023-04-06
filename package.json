@@ -39,5 +39,20 @@
     "rollup-plugin-esbuild": "^5.0.0",
     "rollup-plugin-workbox": "^6.2.0"
   },
-  "customElements": "custom-elements.json"
+  "customElements": "custom-elements.json",
+  "main": "rollup.config.js",
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ndh5232/character-card.git"
+  },
+  "keywords": [
+    "character-card"
+  ],
+  "bugs": {
+    "url": "https://github.com/ndh5232/character-card/issues"
+  },
+  "homepage": "https://github.com/ndh5232/character-card#readme"
 }
