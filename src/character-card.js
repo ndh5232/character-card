@@ -1,4 +1,5 @@
 import { LitElement, html, css } from 'lit';
+import '@lrnwebcomponents/meme-maker';
 
 
 
@@ -116,8 +117,9 @@ export class CharacterCard extends LitElement {
   render() {
     return html`
 <div class="wrapper">
-  <div class="container">
+<div class="container">
   <img src="${woody}" style="width: 100%; height: auto;">
+  <meme-maker template="${woody}" text="I am the one who cooks"></meme-maker>
   <div class="header">
     <h3>${this.name}</h3>
     <h4>${this.position}</h4>
@@ -128,11 +130,11 @@ export class CharacterCard extends LitElement {
       <ul>
         <li>Woody holding back Sora</li>
         <li>To let the man cook!</li>
-       </ul>
+      </ul>
     </div>
   </details>
-  </div>
-  </div>
+</div>
+
   
   
     `;
